@@ -1,11 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
 import App from './components/App'
 import Stage from './components/bouncy-ball/Stage'
+import { BrowserRouter } from 'react-router-dom'
+
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<Stage />, document.getElementById('app'))
+  ReactDOM.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+    document.getElementById('app')
+  )
 })
 
 document.addEventListener('DOMContentLoaded', () => {
