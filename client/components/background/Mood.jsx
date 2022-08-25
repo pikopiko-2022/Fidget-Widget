@@ -1,13 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-function Mood() {
-  const [mood, setMood] = useState('')
-
-  const handleChange = (event) => {
-    setMood(event.target.value)
-  }
-
+function Mood({ mood, handleChange }) {
   return (
     <div className="mood-menu">
       <label>

@@ -17,7 +17,6 @@ const App = () => {
           {/* <Route path="/widget/:fidget" element={<Fidget />} /> */}
         </Routes>
       </Background>
-      <Mood />
 
       {/* {<Dragbox />}
       <Link to="/widget/ball">Ball</Link> |<Link to="/widget/box">box</Link> |
