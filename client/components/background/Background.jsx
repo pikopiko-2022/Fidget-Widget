@@ -13,16 +13,16 @@ function Background({ children }) {
   const handleChange = (event) => {
     setMood(event.target.value)
     switch (event.target.value) {
-      case 'Happy':
+      case 'happy':
         setVideo(bgVidOne)
         break
-      case 'Annoyed':
+      case 'annoyed':
         setVideo(bgVidTwo)
         break
-      case 'Pensive':
+      case 'pensive':
         setVideo(bgVidThree)
         break
-      case 'Peaceful':
+      case 'peaceful':
         setVideo(bgVidFour)
         break
       default:
