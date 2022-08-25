@@ -5,8 +5,12 @@ import Header from './Header'
 import Widget from './Widget'
 import { Link } from 'react-router-dom'
 
+import Background from './background/Background'
+import Mood from './background/Mood'
+
 const App = () => {
-  return (
+
+return (
     <>
       {count}
       <h1>{greeting}</h1>
@@ -19,6 +23,8 @@ const App = () => {
       {<Dragbox />}
       <Link to="/widget/ball">Ball</Link> |<Link to="/widget/box">box</Link> |
       <Link to="/widget/clock">clock</Link>
+      <Background />
+      <Mood />
       <Header />
       <Widget />
     </>
