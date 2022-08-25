@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import bgVidOne from '../../../server/public/video/backgroundImageOne.mp4'
-import bgVidTwo from '../../../server/public/video/backgroundImageTwo.mp4'
-import bgVidThree from '../../../server/public/video/backgroundImageThree.mp4'
-import bgVidFour from '../../../server/public/video/backgroundImageFour.mp4'
 import bgVidFive from '../../../server/public/video/backgroundImageFive.mp4'
+import bgVidFour from '../../../server/public/video/backgroundImageFour.mp4'
+import bgVidOne from '../../../server/public/video/backgroundImageOne.mp4'
+import bgVidThree from '../../../server/public/video/backgroundImageThree.mp4'
+import bgVidTwo from '../../../server/public/video/backgroundImageTwo.mp4'
 import Mood from './Mood'
 
 function Background({ children }) {
@@ -13,16 +13,16 @@ function Background({ children }) {
   const handleChange = (event) => {
     setMood(event.target.value)
     switch (event.target.value) {
-      case 'Happy':
+      case 'happy':
         setVideo(bgVidOne)
         break
-      case 'Annoyed':
+      case 'annoyed':
         setVideo(bgVidTwo)
         break
-      case 'Pensive':
+      case 'pensive':
         setVideo(bgVidThree)
         break
-      case 'Peaceful':
+      case 'peaceful':
         setVideo(bgVidFour)
         break
       default:
