@@ -10,11 +10,4 @@ document.addEventListener('DOMContentLoaded', () => {
     </BrowserRouter>,
     document.getElementById('app')
   )
-
 })
-
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<App />, document.getElementById('app'))
-})
-
-

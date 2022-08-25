@@ -25,15 +25,13 @@ switch (mood) {
     video = bgVidFive
 }
 
-function Background() {
+function Background({ children }) {
   return (
     <div>
       <div className="video-container">
         <h1>Fidget Widget</h1>
         <video src={video} autoPlay loop muted></video>
-        <div className="fidget-container">
-          <p>Fidget Component</p>
-        </div>
+        <div className="fidget-container">{children}</div>
       </div>
     </div>
   )
