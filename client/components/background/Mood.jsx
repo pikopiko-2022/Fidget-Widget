@@ -13,7 +13,6 @@ function Mood({ mood, handleChange }) {
           <option value="peaceful">Peaceful</option>
         </select>
       </label>
-      <p>You mood is {mood}!</p>
       <Link to="/bouncy-ball">Bouncy ball</Link>
       <Link to="/drag-box">Drag Box</Link>
     </div>
