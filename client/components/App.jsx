@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { getGreeting } from '../apiClient'
+import Dragbox from './drag-box/Dragbox'
 
 const App = () => {
   const [greeting, setGreeting] = useState('')
@@ -29,6 +30,7 @@ const App = () => {
         </p>
       )}
       <button onClick={() => setCount(count + 1)}>Click</button>
+      {<Dragbox />}
     </>
   )
 }
