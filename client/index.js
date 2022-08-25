@@ -1,8 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-import Stage from './components/bouncy-ball/Stage'
+import App from './components/App'
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<Stage />, document.getElementById('app'))
+  ReactDOM.render(<App />, document.getElementById('app'))
 })
