@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { getGreeting } from '../apiClient'
 
 import Background from './background/Background'
+import Mood from './background/Mood'
 
 const App = () => {
   // const [greeting, setGreeting] = useState('')
@@ -24,6 +25,7 @@ const App = () => {
   return (
     <>
       <Background />
+      <Mood />
     </>
   )
 }

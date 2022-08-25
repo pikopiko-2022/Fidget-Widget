@@ -1,48 +1,24 @@
 import React, { useState } from 'react'
 
-const initialMood = { mood: '' }
+function Mood() {
+  const [mood, setMood] = useState('')
 
-function Mood({ currentMood }) {
-  const [data, setData] = useState(initialMood)
-  const { mood } = data
-
-  function handleChange(event) {
-    setData({
-      ...data,
-      [event.target.mood]: event.target.value,
-    })
+  const handleChange = (event) => {
+    setMood(event.target.value)
   }
 
-  function handleSubmit(e) {
-    e.preventDefault()
-    currentMood(data)
-    setData(initialMood)
-  }
   return (
-    <div>
-      <h3>Mood</h3>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="mood">Mood</label>
-          <input
-            type="text"
-            id="mood"
-            name="mood"
-            value={mood}
-            onChange={handleChange}
-          />
-        </div>
-
-        <input type="submit" />
-        <button
-          onClick={(e) => {
-            e.preventDefault()
-            setData(initialMood)
-          }}
-        >
-          Cancel
-        </button>
-      </form>
+    <div className="mood-menu">
+      <label>
+        What is your mood?
+        <select value={mood} onChange={handleChange}>
+          <option value="happy">Happy</option>
+          <option value="annoyed">Annoyed</option>
+          <option value="pensive">Pensive</option>
+          <option value="peaceful">Peaceful</option>
+        </select>
+      </label>
+      <p>You mood is {mood}!</p>
     </div>
   )
 }
