@@ -1,20 +1,26 @@
 import React, { useState } from 'react'
-import Ball from './Ball'
-import { getRandomColor } from './utils'
+import { getRandomColor } from '../utils'
+import Bubble from './Bubble'
 
 const Stage = () => {
-  const [balls, setBalls] = useState([])
-  const createNewBall = (evt) => {
+  const [bubbles, setBubbles] = useState([])
+  const [nextId, setNextId] = useState(0)
+
+  const createNewBubble = (evt) => {
     evt.preventDefault()
-    console.log(evt)
-    setBalls([
-      ...balls,
-      { x: evt.pageX, y: evt.pageY, color: getRandomColor() },
+    setBubbles([
+      ...bubbles,
+      { id: nextId, x: evt.pageX, y: evt.pageY, color: getRandomColor({}) },
     ])
+    setNextId((id) => id + 1)
+  }
+
+  const killBubble = (id) => {
+    setBubbles((bubbles) => bubbles.filter((bubble) => bubble.id !== id))
   }
   return (
     <div
-      onContextMenu={createNewBall}
+      onContextMenu={createNewBubble}
       style={{
         backgroundColor: 'black',
         color: 'white',
@@ -26,8 +32,14 @@ const Stage = () => {
         Right click to create a new ball
       </div>
       <svg width="100%" height="100%">
-        {balls.map((ball, i) => (
-          <Ball key={i} initX={ball.x} initY={ball.y} color={ball.color} />
+        {bubbles.map((bubble) => (
+          <Bubble
+            key={bubble.id}
+            initX={bubble.x}
+            initY={bubble.y}
+            color={bubble.color}
+            killBubble={() => killBubble(bubble.id)}
+          />
         ))}
       </svg>
     </div>
