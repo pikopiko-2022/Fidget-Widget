@@ -24,8 +24,8 @@ const Stage = () => {
       style={{
         backgroundColor: 'black',
         color: 'white',
-        width: '100vw',
-        height: '100vh',
+        width: '100%',
+        height: '100%',
       }}
     >
       <div style={{ margin: 'auto', width: '100%' }}>

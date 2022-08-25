@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Mood() {
   const [mood, setMood] = useState('')
@@ -19,6 +20,8 @@ function Mood() {
         </select>
       </label>
       <p>You mood is {mood}!</p>
+      <Link to="/bouncy-ball">Bouncy ball</Link>
+      <Link to="/drag-box">Drag Box</Link>
     </div>
   )
 }
