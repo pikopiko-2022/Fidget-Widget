@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Buttons = () => {
   let [index, setIndex] = useState(0)
 
+  let navigate = useNavigate()
   // const getRandomNumber = (min, max) => {
   //   index = Math.floor(Math.random() * (max - min + 1)) + min
   //   console.log(index)
@@ -14,18 +15,20 @@ const Buttons = () => {
 
   function handelBack() {
     if (index === 0) {
-      return setIndex(fidgetArr.length - 1)
+      setIndex(fidgetArr.length - 1)
     } else {
-      return setIndex(index - 1)
+      setIndex(index - 1)
     }
+    navigate(`../${fidgetArr[index]}/`, { replace: true })
   }
 
   function handelNext() {
     if (index === fidgetArr.length - 1) {
-      return setIndex(0)
+      setIndex(0)
     } else {
-      return setIndex(index + 1)
+      setIndex(index + 1)
     }
+    navigate(`../${fidgetArr[index]}/`, { replace: true })
   }
 
   return (
@@ -37,7 +40,6 @@ const Buttons = () => {
       <button className="button-back" id="back" onClick={handelBack}>
         Back
       </button>
-      {index}
     </>
   )
 }
