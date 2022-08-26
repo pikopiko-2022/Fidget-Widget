@@ -3,12 +3,11 @@ import React from 'react'
 function Mood({ mood, handleChange }) {
   return (
 
-
     <>
       <div>
         <label>
-          Mood:
-          <select value={mood} onChange={handleChange}>
+          <select className="select" value={mood} onChange={handleChange}>
+            <option selected>Mood</option>
             <option value="happy">Happy</option>
             <option value="annoyed">Annoyed</option>
             <option value="pensive">Pensive</option>
@@ -17,8 +16,7 @@ function Mood({ mood, handleChange }) {
         </label>
       </div>
     </>
-
-
+  )
 }
 
 export default Mood
