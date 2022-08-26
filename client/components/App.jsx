@@ -5,23 +5,26 @@ import Stage from './bouncy-ball/Stage'
 import Dragbox from './drag-box/Dragbox'
 import FloatyStage from './floaty-ball/Stage'
 
+import Home from './Home'
+import Stage from './bouncy-ball/Stage'
+import RandomClock from './random-clock/RandomClock'
+
+
+
 const App = () => {
   return (
     <>
       <Background>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/bouncy-ball/" element={<Stage />} />
           <Route path="/drag-box" element={<Dragbox />} />
+
           <Route path="/floaty-ball" element={<FloatyStage />} />
-          {/* <Route path="/widget/:fidget" element={<Fidget />} /> */}
+          {/* <Route path="/widget/:fidget" element={<Fidget />} /> */}     <Route path="/random-clock" element={<RandomClock />} />
+
         </Routes>
       </Background>
-
-      {/* {<Dragbox />}
-      <Link to="/widget/ball">Ball</Link> |<Link to="/widget/box">box</Link> |
-      <Link to="/widget/clock">clock</Link>
-      <Header />
-      <Widget /> */}
     </>
   )
 }
