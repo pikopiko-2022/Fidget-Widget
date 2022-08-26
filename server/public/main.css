@@ -108,3 +108,27 @@ a:visited {
   font-size: 10rem;
   font-family: 'Syne Mono', monospace;
 }
+
+.button-next {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: gold;
+  background-color: black;
+  border: 1px solid gold;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-back {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: gold;
+  background-color: black;
+  border: 1px solid gold;
+  border-radius: 5px;
+  font-size: 16px;
+}

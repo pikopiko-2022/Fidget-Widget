@@ -34,10 +34,10 @@ const Buttons = () => {
   return (
     <>
       {console.log(fidgetArr[index])}
-      <button id="next" onClick={handelNext}>
+      <button className="button-next" id="next" onClick={handelNext}>
         Next
       </button>
-      <button id="back" onClick={handelBack}>
+      <button className="button-back" id="back" onClick={handelBack}>
         Back
       </button>
     </>
