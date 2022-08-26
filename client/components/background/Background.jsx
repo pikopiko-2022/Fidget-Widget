@@ -42,7 +42,8 @@ function Background({ children }) {
         <div className="links">
           <Link to="/">Home</Link>
           <Link to="/bouncy-ball">Bouncy ball</Link>
-          <Link to="/drag-box">Drag Box</Link>
+          <Link to="/drag-box">Drag box</Link>
+          <Link to="/random-clock">Random clock</Link>
         </div>
 
         <h1>Fidget Widget</h1>

@@ -5,8 +5,8 @@ function Mood({ mood, handleChange }) {
     <>
       <div>
         <label>
-          Mood:
-          <select value={mood} onChange={handleChange}>
+          <select className="select" value={mood} onChange={handleChange}>
+            <option selected>Mood</option>
             <option value="happy">Happy</option>
             <option value="annoyed">Annoyed</option>
             <option value="pensive">Pensive</option>
