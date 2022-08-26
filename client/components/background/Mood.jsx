@@ -2,6 +2,7 @@ import React from 'react'
 
 function Mood({ mood, handleChange }) {
   return (
+
     <>
       <div>
         <label>
@@ -15,7 +16,8 @@ function Mood({ mood, handleChange }) {
         </label>
       </div>
     </>
-  )
+
+
 }
 
 export default Mood

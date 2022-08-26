@@ -1,4 +1,7 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+html,
+body {
   padding: 0;
   margin: 0;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -45,6 +48,7 @@ video {
 
 .links {
   display: flex;
+
   flex-flow: column wrap;
   position: absolute;
   justify-content: flex-end;
@@ -54,6 +58,9 @@ video {
   padding: 10px;
   top: 0;
   left: 0;
+  
+ 
+  
 }
 
 .mood-menu {
@@ -75,4 +82,11 @@ video {
   background-color: orange;
   cursor: move;
   margin: auto;
+}
+
+.clock-display {
+  text-align: center;
+  color: aqua;
+  font-size: 14rem;
+  font-family: 'Syne Mono', monospace;
 }
