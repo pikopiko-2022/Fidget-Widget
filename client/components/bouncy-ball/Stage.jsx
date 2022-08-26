@@ -10,7 +10,12 @@ const Stage = () => {
     evt.preventDefault()
     setBubbles([
       ...bubbles,
-      { id: nextId, x: evt.pageX, y: evt.pageY, color: getRandomColor({}) },
+      {
+        id: nextId,
+        x: evt.nativeEvent.offsetX,
+        y: evt.nativeEvent.offsetY,
+        color: getRandomColor({}),
+      },
     ])
     setNextId((id) => id + 1)
   }
@@ -29,7 +34,7 @@ const Stage = () => {
       }}
     >
       <div style={{ margin: 'auto', width: '100%' }}>
-        Right click to create a new ball
+        Right click to make a bubble // Left click to pop it!
       </div>
       <svg width="100%" height="100%">
         {bubbles.map((bubble) => (

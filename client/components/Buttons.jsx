@@ -9,7 +9,7 @@ const Buttons = () => {
     return parseInt(index)
   }
 
-  let fidgetArr = ['bouncy-ball', 'drag-box']
+  // let fidgetArr = ['bouncy-ball', 'drag-box']
 
   return (
     <>
@@ -19,12 +19,9 @@ const Buttons = () => {
       <button id="back" onClick={() => setIndex(parseInt(index - 1))}>
         Back
       </button>
-      {/* <button
-        id="shuffle"
-        onClick={() => }{}
-      >
+      <button id="shuffle" onClick={() => setIndex(getRandomNumber(0, 100))}>
         Shuffle
-      </button> */}
+      </button>
       {index}
     </>
   )
