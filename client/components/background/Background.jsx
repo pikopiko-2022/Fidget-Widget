@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Buttons from '../Buttons'
 
 import bgVidFive from '../../../server/public/video/backgroundImageFive.mp4'
 import bgVidFour from '../../../server/public/video/backgroundImageFour.mp4'
+
 import bgVidOne from '../../../server/public/video/backgroundImageOne.mp4'
 import bgVidThree from '../../../server/public/video/backgroundImageThree.mp4'
 import bgVidTwo from '../../../server/public/video/backgroundImageTwo.mp4'
@@ -36,13 +38,17 @@ function Background({ children }) {
     <div>
       <div className="video-container">
         <video src={video} autoPlay loop muted></video>
+        <Buttons />
         <div className="links">
           <Link to="/">Home</Link>
           <Link to="/bouncy-ball">Bouncy ball</Link>
+          <Link to="/floaty-ball">Floaty ball</Link>
           <Link to="/drag-box">Drag box</Link>
           <Link to="/random-clock">Random clock</Link>
         </div>
+
         <h1>Fidget Widget</h1>
+
         <div className="fidget-container">{children}</div>
         <div className="mood-menu">
           <Mood mood={mood} handleChange={handleChange} />

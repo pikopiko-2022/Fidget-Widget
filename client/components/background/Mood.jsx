@@ -2,7 +2,6 @@ import React from 'react'
 
 function Mood({ mood, handleChange }) {
   return (
-
     <>
       <div>
         <label>
