@@ -22,7 +22,7 @@ const RandomClock = () => {
         )}:${('0' + time.getMinutes()).slice(-2)}:${(
           '0' + time.getSeconds()
         ).slice(-2)}`}</div>
-        <div>
+        <div className="clock-slider-container">
           <input
             type="range"
             min="1"
