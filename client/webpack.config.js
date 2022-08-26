@@ -15,7 +15,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.mp4$/,
+        test: /\.(mp4|wav)$/,
         use: [
           {
             loader: 'file-loader',
