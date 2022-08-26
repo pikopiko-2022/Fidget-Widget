@@ -119,6 +119,8 @@ a:visited {
   border: 1px solid gold;
   border-radius: 5px;
   font-size: 16px;
+  padding: 5px;
+  margin: 20px
 }
 
 .button-back {
@@ -131,4 +133,6 @@ a:visited {
   border: 1px solid gold;
   border-radius: 5px;
   font-size: 16px;
+  padding: 5px;
+  margin: 20px
 }
