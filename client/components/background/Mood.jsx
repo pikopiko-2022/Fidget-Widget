@@ -5,7 +5,7 @@ function Mood({ mood, handleChange }) {
     <>
       <div>
         <label>
-          What is your mood?
+          Mood:
           <select value={mood} onChange={handleChange}>
             <option value="happy">Happy</option>
             <option value="annoyed">Annoyed</option>

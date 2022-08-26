@@ -58,6 +58,7 @@ video {
 
 .mood-menu {
   display: flex;
+  flex-flow: column;
   position: absolute;
   padding: 5px 5px;
   background-color: black;
