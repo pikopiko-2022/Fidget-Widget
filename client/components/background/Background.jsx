@@ -1,4 +1,5 @@
 import React from 'react'
+
 import bgVidOne from '../../../server/public/video/backgroundImageOne.mp4'
 import bgVidTwo from '../../../server/public/video/backgroundImageTwo.mp4'
 import bgVidThree from '../../../server/public/video/backgroundImageThree.mp4'

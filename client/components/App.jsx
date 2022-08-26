@@ -1,4 +1,6 @@
 import React from 'react'
+// import Buttons from './Buttons'
+
 import Dragbox from './drag-box/Dragbox'
 import Header from './Header'
 import Widget from './Widget'
@@ -12,17 +14,13 @@ const App = () => {
     <>
       <Background>
         <Routes>
-          <Route path="/bouncy-ball/" element={<Stage />} />
+          <Route path="/bouncy-ball" element={<Stage />} />
           <Route path="/drag-box" element={<Dragbox />} />
           {/* <Route path="/widget/:fidget" element={<Fidget />} /> */}
         </Routes>
+        {/* <Buttons /> */}
       </Background>
       <Mood />
-      {/* {<Dragbox />}
-      <Link to="/widget/ball">Ball</Link> |<Link to="/widget/box">box</Link> |
-      <Link to="/widget/clock">clock</Link>
-      <Header />
-      <Widget /> */}
     </>
   )
 }
