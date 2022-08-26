@@ -1,5 +1,4 @@
 import React from 'react'
-import Buttons from './Buttons'
 import Home from './Home'
 import Dragbox from './drag-box/Dragbox'
 import Stage from './bouncy-ball/Stage'
@@ -13,7 +12,6 @@ const App = () => {
   return (
     <>
       <Background>
-        <Buttons />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/bouncy-ball" element={<Stage />} />
