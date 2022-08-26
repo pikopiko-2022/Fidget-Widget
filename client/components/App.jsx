@@ -1,11 +1,9 @@
 import React from 'react'
-import Dragbox from './drag-box/Dragbox'
-import Header from './Header'
-import Widget from './Widget'
-import Stage from './bouncy-ball/Stage'
-import { Link, Routes, Route } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Background from './background/Background'
-import Mood from './background/Mood'
+import Stage from './bouncy-ball/Stage'
+import Dragbox from './drag-box/Dragbox'
+import FloatyStage from './floaty-ball/Stage'
 
 const App = () => {
   return (
@@ -14,6 +12,7 @@ const App = () => {
         <Routes>
           <Route path="/bouncy-ball/" element={<Stage />} />
           <Route path="/drag-box" element={<Dragbox />} />
+          <Route path="/floaty-ball" element={<FloatyStage />} />
           {/* <Route path="/widget/:fidget" element={<Fidget />} /> */}
         </Routes>
       </Background>

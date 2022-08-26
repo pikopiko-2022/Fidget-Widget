@@ -15,6 +15,7 @@ function Mood({ mood, handleChange }) {
       </label>
       <Link to="/bouncy-ball">Bouncy ball</Link>
       <Link to="/drag-box">Drag Box</Link>
+      <Link to="/floaty-ball">Floaty Ball</Link>
     </div>
   )
 }
